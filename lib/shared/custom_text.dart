@@ -11,10 +11,12 @@ Text normalText(
   Color textColor = textColor,
   TextAlign align = TextAlign.start,
   FontWeight fontWeight = FontWeight.w500,
+  int maxLines = 1,
 }) {
   return Text(
     data,
     overflow: TextOverflow.ellipsis,
+    maxLines: maxLines,
     textAlign: align,
     style: TextStyle(
       fontSize: size.sp,

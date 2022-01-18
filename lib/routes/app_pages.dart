@@ -2,6 +2,8 @@ import 'package:bhive_task/modules/dashboard/dashboard_binding.dart';
 import 'package:bhive_task/modules/dashboard/dashboard_screen.dart';
 import 'package:bhive_task/modules/login/login_binding.dart';
 import 'package:bhive_task/modules/login/login_screen.dart';
+import 'package:bhive_task/modules/referral/referral_binding.dart';
+import 'package:bhive_task/modules/referral/referral_screen.dart';
 import 'package:get/get.dart';
 
 import 'routes.dart';
@@ -17,6 +19,11 @@ class AppPages {
       name: Routes.DASHBOARD_SCREEN,
       page: () => const DashboardScreen(),
       binding: DashboardBinding(),
+    ),
+    GetPage(
+      name: Routes.REFERRAL_SCREEN,
+      page: () => const ReferralScreen(),
+      binding: ReferralBinding(),
     ),
   ];
 }

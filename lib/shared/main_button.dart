@@ -14,16 +14,19 @@ class MainButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: onTap(),
-      child: normalText(buttonText),
+      onPressed: () => onTap(),
+      child: normalText(buttonText, textColor: whiteColor),
       style: ElevatedButton.styleFrom(
         minimumSize: Size(
           100.0.wp,
-          5.2.hp,
+          5.5.hp,
         ),
         elevation: 0,
+        primary: primaryColor,
+        onPrimary: primaryLightColor,
+        padding: EdgeInsets.symmetric(vertical: 2.0.hp),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5.0.wp),
+          borderRadius: BorderRadius.circular(10.0.wp),
         ),
       ),
     );
